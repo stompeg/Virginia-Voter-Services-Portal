@@ -1,30 +1,44 @@
 .button {
   display: block;
-  background: image-url('buttons.png') no-repeat;
-  background-position-y: -74px;
   height: 37px;
   margin-left: -5px;
 }
 
-.button:hover {
-  background-position-y: -37px;
-}
-
-.button:active {
-  background-position-y: 0;
-}
-
 .overseas.button {
-  background-position-x: 0;
+  background: image-url('buttons.png') no-repeat 0 -74px;
   width: 164px;
 }
 
+.overseas.button:hover {
+  background: image-url('buttons.png') no-repeat 0 -37px;  
+}
+
+.overseas.button:active {
+  background: image-url('buttons.png') no-repeat 0 0;  
+}
+
 .residential.button {
-  background-position-x: -164px;
+  background: image-url('buttons.png') no-repeat -166px -74px;  
   width: 175px;
 }
 
+.residential.button:hover {
+  background: image-url('buttons.png') no-repeat -166px -37px;    
+}
+
+.residential.button:active {
+  background: image-url('buttons.png') no-repeat -166px 0;    
+}
+
 .update.button {
-  background-position-x: -339px;
+  background: image-url('buttons.png') no-repeat -339px -74px;  
   width: 231px;
+}
+
+.update.button:hover {
+  background: image-url('buttons.png') no-repeat -339px -37px;    
+}
+
+.update.button:active {
+  background: image-url('buttons.png') no-repeat -339px 0;    
 }
