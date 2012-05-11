@@ -2,7 +2,7 @@
   .head
     %h3
       Mailing address
-  %section
+  .partition
     %h4 Is your Mailing address the same as your Registration address?    
     .radio
       = f.radio_button :rights_revoked, 'no'
@@ -32,7 +32,7 @@
         .space
           &mdash;
         %input{ :type => "text", :value => "", :class => "second-zip" }/   
-  %section
+  .partition
     %h4 Are you currently registered to vote at another address in Virginia or in another state?
     .radio
       = f.radio_button :rights_revoked, 'no'
@@ -85,12 +85,13 @@
           = f.check_box :no_ssn
           Rural address or homeless? Please check the box and describe where you reside.
         %textarea{ :cols => "10", :rows => "10" }    
-  .row   
-    .span12
-      .checkbox
-        = f.check_box :no_ssn
-        %strong
-          I authorize cancellation of my existing registration.     
+  .partition      
+    .row   
+      .span12
+        .checkbox
+          = f.check_box :no_ssn
+          %strong
+            I authorize cancellation of my existing registration.     
   .form-actions
     = button_tag '&larr; Back'.html_safe, class: 'back btn'
     = button_tag 'Next &rarr;'.html_safe, class: 'next btn'             

@@ -42,3 +42,41 @@
 .update.button:active {
   background: image-url('buttons.png') no-repeat -339px 0;    
 }
+
+.btn {
+  border: none;
+  text-indent: -999em;
+  padding: 0;
+  height: 37px;
+  width: 73px;
+  outline: none;
+  box-shadow: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  text-shadow: none;
+
+  &:hover {
+    transition: none;
+    -moz-transition: none;
+    -webkit-transition: none;
+  }
+
+  &.disabled, 
+  &[disabled] {
+    cursor: default;
+    background-image: none;
+    background-color: none;
+    filter: alpha(opacity=100);
+    opacity: 1;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+  }
+
+  &.active,
+  &:active {
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+  }
+}

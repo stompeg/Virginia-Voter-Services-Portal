@@ -3,7 +3,7 @@
     %h3
       Options
     .description Select only applicable options.
-  %section  
+  .partition
     .row  
       .span12
         .checkbox
@@ -14,7 +14,7 @@
       .span12
         %span I qualify for Address confidentiality because
         = f.select :suffix, [ 'Jr', 'Sr' ], { include_blank: true }, { class: 'span6' }
-  %section
+  .partition
     .row  
       .span12
         .checkbox
@@ -43,7 +43,7 @@
       .span3
         %span Held on              
         = f.text_field :first_name 
-  %section      
+  .partition
     .row                                    
       .span12
         %p 
@@ -104,7 +104,7 @@
         %span
           Country 
         = f.text_field :first_name   
-  %section      
+  .partition   
     .row  
       .span12
         %h4 

@@ -10,22 +10,17 @@
     }
     .row {
       margin-bottom: 10px;
-    }
-  }
+      margin-left: 0;
 
-  section {
-    padding: 10px 0;
-    border-bottom: 1px dotted #ccc;
-
-    h4 {
-      font-size: 15px;
-      font-weight: normal;
-      line-height: 1.5;
-    }
-
-    section {
-      border-bottom: none;
-      padding-bottom: 0;
+      .span2,
+      .span3,
+      .span6,
+      .span10,
+      .span12 {
+        &:first-child {
+          margin-left: 0;
+        }
+      }
     }
   }
 
@@ -41,6 +36,27 @@
       display: inline;
     }
   }
+}
+
+.partition {
+  padding: 10px 0;
+  border-bottom: 1px dotted #ccc;
+
+  h4 {
+    font-size: 15px;
+    font-weight: normal;
+    line-height: 1.5;
+  }
+
+  section {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+}
+
+select {
+  height: auto;
+  line-height: 1.7em;
 }
 
 .date select {
@@ -83,6 +99,8 @@
 
   .zip-field,
   .postal-code-field {
+    margin-left: 0;
+    padding-left: 10px;
     .first-zip {
       width: 50px;
       float: left;
@@ -107,13 +125,22 @@
 
   .country-field {
     width: 70px;
+    padding-left: 10px;
+    margin-left: 0;
     input {
       width: 60px;
     }
   }  
 
+  .lot-field {
+    margin-left: 0;
+    padding-left: 10px;
+  }
+
   .street-type-field {
     width: 82px;
+    margin-left: 0;
+    padding-left: 10px;
   }  
 
   .election-name-field {
@@ -154,36 +181,6 @@
 
 .form-actions {
   overflow: hidden; 
-
-  .btn {
-    border: none;
-    text-indent: -999em;
-    padding: 0;
-    height: 37px;
-    width: 73px;
-    outline: none;
-    box-shadow: none;
-    -moz-box-shadow: none;
-    -webkit-box-shadow: none;
-
-    &:hover {
-      transition: none;
-      -moz-transition: none;
-      -webkit-transition: none;
-    }
-
-    &.disabled, 
-    &[disabled] {
-      opacity: 1;
-    }
-
-    &.active,
-    &:active {
-      box-shadow: none;
-      -moz-box-shadow: none;
-      -webkit-box-shadow: none;
-    }
-  }
 
   .back {
     float: left;
@@ -241,3 +238,22 @@
     }
   }
 }  
+
+.notice {
+  border: 1px solid #d2d1d2;
+  padding: 5px 8px;
+  width: 550px;
+  margin-left: -9px;
+}
+
+#download {
+  .download-link {
+    float: right;
+    background: image-url('icon_download.png') no-repeat;
+    width: 60px;
+    height: 60px;
+    margin: 0 0 10px 10px;
+  }
+}
+
+

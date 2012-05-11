@@ -185,8 +185,8 @@ class Forms.Section
   show: => @el.show()
   name: => @el.attr('id')
 
-  filled: (el) -> !el.val().match(/^\s*$/)
-  checked: (el) -> el.is(":checked")
+  filled: (el) -> el && !el.val().match(/^\s*$/)
+  checked: (el) -> el && el.is(":checked")
 
 
 # Step indicator

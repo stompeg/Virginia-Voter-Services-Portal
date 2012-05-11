@@ -6,6 +6,8 @@
     font-size: 17px;
     font-weight: normal;
     color: #a6a4a5;
+    line-height: 31px;
+    height: 31px;
   }
 
   ul {
@@ -15,19 +17,13 @@
   }
 
   .current {
-    background: #3d75b9;
-    border-radius: 0 25px 25px 0;
-    -moz-border-radius: 0 25px 25px 0;
-    -webkit-border-radius: 0 25px 25px 0;
-    behavior: url("PIE.htc");
+    background: image-url('current-step.jpg') no-repeat right top #3d75b9;
     h2 {
       font-weight: bold;
       color: #fff;
     }
     &.last {
-      border-radius: 0;
-      -moz-border-radius: 0;
-      -webkit-border-radius: 0;
+      background-image: none;
     }
   }  
 
